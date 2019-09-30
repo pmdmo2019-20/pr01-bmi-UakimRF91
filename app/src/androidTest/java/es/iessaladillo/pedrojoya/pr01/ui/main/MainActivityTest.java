@@ -108,11 +108,12 @@ public class MainActivityTest {
             .perform(typeText("2"), closeSoftKeyboard());
         onView(withId(R.id.btnCalculate)).perform(click());
 
+        //Esto quiere que lblResult contenga main_bmi, preguntar qué es main_bmi
         onView(withId(R.id.lblResult))
-            .check(matches(withText(activityRule.getActivity().getString(R.string.main_bmi, 25f,
-                activityRule.getActivity().getString(R.string.main_overweight)))));
+                .check(matches(withText(activityRule.getActivity().getString(R.string.main_bmi, 25f,
+                        activityRule.getActivity().getString(R.string.main_overweight)))));
         onView(withId(R.id.imgBmi))
-            .check(matches(new DrawableMatcher(R.drawable.overweight)));
+                .check(matches(new DrawableMatcher(R.drawable.overweight)));
     }
 
     // Focus flow
