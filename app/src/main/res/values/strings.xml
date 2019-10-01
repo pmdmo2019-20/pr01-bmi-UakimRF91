@@ -4,7 +4,7 @@
     <string name="lblHeight">Height</string>
     <string name="btnReset">RESET</string>
     <string name="btnCalculate">CALCULATE BMI</string>
-    <string name="main_bmi">BMI: %.1f %s</string>
+    <string name="main_bmi">BMI: %1$.1f %2$s</string>
     <string name="txtWeight">(kg)</string>
     <string name="txtHeight">(m)</string>
     <string name="main_low_weight">Underweight</string>
